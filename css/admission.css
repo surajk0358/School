@@ -1,0 +1,169 @@
+/* css/admission.css */
+.admission-process {
+    margin-bottom: 4rem;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.process-step {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.process-step h3 {
+    margin-top: 1rem;
+    border: none;
+    padding: 0;
+}
+
+.fee-structure {
+    margin-bottom: 4rem;
+}
+
+.fee-table {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+}
+
+.fee-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fee-table th {
+    background: var(--dark-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: left;
+}
+
+.fee-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.fee-table tr:nth-child(even) {
+    background: var(--light-color);
+}
+
+.fee-table tr:hover {
+    background: #e9ecef;
+}
+
+.fee-note {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.documents {
+    margin-bottom: 4rem;
+}
+
+.documents-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.document-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.document-item h4 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+}
+
+.document-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.document-item li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.document-item li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.scholarship {
+    margin-bottom: 4rem;
+}
+
+.scholarship-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.scholarship-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 5px solid var(--primary-color);
+}
+
+.scholarship-card:hover {
+    transform: translateY(-5px);
+}
+
+.scholarship-card h4 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.application-form {
+    margin-bottom: 4rem;
+}

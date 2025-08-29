@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संपर्क - शाळेचे नाव</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-section">
+                <div class="logo">शाळेचे नाव</div>
+                <div class="tagline">ज्ञान, चारित्र्य, उत्कृष्टता</div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">मुख्यपृष्ठ</a></li>
+            <li><a href="about.html">आमच्याबद्दल</a></li>
+            <li><a href="academics.html">शैक्षणिक</a></li>
+            <li><a href="admission.html">प्रवेश</a></li>
+            <li><a href="hostel.html">छात्रावास</a></li>
+            <li><a href="contact.html" class="active">संपर्क</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>संपर्क साधा</h1>
+            <p>आमच्याशी संपर्क साधण्यासाठी अधिक माहिती</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="section">
+            <div class="content">
+                <h3>आमच्याशी संपर्क साधा</h3>
+                <p>तुम्हाला काही प्रश्न किंवा शंका असल्यास, कृपया आमच्याशी संपर्क साधा. आमची संपर्क टीम तुमच्या प्रश्नांचे उत्तर देण्यासाठी तत्पर आहे. तुम्ही खालीलपैकी कोणत्याही मार्गाने आमच्याशी संपर्क साधू शकता.</p>
+                
+                <h3>कार्यालयीन वेळ</h3>
+                <p>सोमवार ते शनिवार: सकाळी ९:०० ते संध्याकाळी ५:००<br>
+                रविवार: सुट्टी</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>संपर्क माहिती</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>पत्ता</h3>
+                    <p>शाळेचे नाव<br>
+                    मुख्य रस्ता, शहर नाव<br>
+                    जिल्हा - पिन कोड<br>
+                    महाराष्ट्र, भारत</p>
+                </div>
+                <div class="card">
+                    <h3>फोन नंबर</h3>
+                    <p>मुख्य कार्यालय: +९१ XXXXX XXXXX<br>
+                    प्राचार्य कार्यालय: +९१ XXXXX XXXXX<br>
+                    छात्रावास: +९१ XXXXX XXXXX</p>
+                </div>
+                <div class="card">
+                    <h3>ईमेल</h3>
+                    <p>मुख्य: info@schoolname.edu<br>
+                    प्रवेश: admission@schoolname.edu<br>
+                    छात्रावास: hostel@schoolname.edu</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>आमचे स्थान</h2>
+            <div class="content">
+                <div style="width: 100%; height: 400px; background: #f0f0f0; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                    <p style="color: var(--text-light);">नकाशा येथे दिसेल (Google Maps integration)</p>
+                </div>
+                <h3>प्रवास मार्ग</h3>
+                <p><strong>बस स्थानकापासून:</strong> शहर बस स्थानकापासून २ किमी अंतरावर. बस क्रमांक १०१, २०५ किंवा ३०३ ने थेट येथे पोहोचता येते.</p>
+                <p><strong>रेल्वे स्थानकापासून:</strong> रेल्वे स्थानकापासून ५ किमी अंतरावर. ऑटोरिक्षा किंवा टॅक्सीने सहजपणे पोहोचता येते.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>संपर्क फॉर्म</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">तुमचे नाव *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ईमेल *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">फोन नंबर *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">विषय *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">निवडा</option>
+                                <option value="admission">प्रवेश</option>
+                                <option value="academics">शैक्षणिक</option>
+                                <option value="hostel">छात्रावास</option>
+                                <option value="other">इतर</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">संदेश *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">संदेश पाठवा</button>
+                </form>
+                <div id="formMessage" style="display: none; margin-top: 20px; padding: 10px; border-radius: 5px; text-align: center;"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>तातडीचे संपर्क</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>आपत्कालीन</h3>
+                    <p>आपत्कालीन क्रमांक: +९१ ९८XXX XXXXX<br>
+                    वैद्यकीय आपत्कालीन: +९१ ९७XXX XXXXX<br>
+                    २४ तास उपलब्ध</p>
+                </div>
+                <div class="card">
+                    <h3>प्राचार्य</h3>
+                    <p>श्री. कुलकर्णी<br>
+                    प्राचार्य<br>
+                    फोन: +९१ XXXXX XXXXX<br>
+                    ईमेल: principal@schoolname.edu</p>
+                </div>
+                <div class="card">
+                    <h3>प्रवेश विभाग</h3>
+                    <p>श्रीमती देशपांडे<br>
+                    प्रवेश प्रमुख<br>
+                    फोन: +९१ XXXXX XXXXX<br>
+                    ईमेल: admission@schoolname.edu</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>शाळेचे नाव</h3>
+                <p>ज्ञान, चारित्र्य, उत्कृष्टता</p>
+                <p>शिक्षणात उत्कृष्टतेसाठी १९८० पासून समर्पित</p>
+            </div>
+            <div class="footer-section">
+                <h3>संपर्क</h3>
+                <p>पत्ता: शाळेचा पत्ता, शहर, पिनकोड</p>
+                <p>फोन: +९१ ९८७६५ ४३२१०</p>
+                <p>ईमेल: info@schoolname.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>द्रुत लिंक</h3>
+                <ul>
+                    <li><a href="index.html">मुख्यपृष्ठ</a></li>
+                    <li><a href="about.html">आमच्याबद्दल</a></li>
+                    <li><a href="academics.html">शैक्षणिक</a></li>
+                    <li><a href="admission.html">प्रवेश</a></li>
+                    <li><a href="hostel.html">छात्रावास</a></li>
+                    <li><a href="contact.html">संपर्क</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; २०२३ शाळेचे नाव. सर्व हक्क राखीव.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('show');
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Send email using SMTPJS
+            Email.send({
+                SecureToken: "your_secure_token_here", // You need to get this from SMTPJS.com
+                To: 'kokateslk@gmail.com',
+                From: 'your-email@example.com', // Replace with your email
+                Subject: `शाळा संपर्क फॉर्म: ${subject}`,
+                Body: `
+                    <strong>नाव:</strong> ${name}<br>
+                    <strong>ईमेल:</strong> ${email}<br>
+                    <strong>फोन:</strong> ${phone}<br>
+                    <strong>विषय:</strong> ${subject}<br>
+                    <strong>संदेश:</strong><br>${message}
+                `
+            }).then(
+                message => {
+                    const formMessage = document.getElementById('formMessage');
+                    if (message === 'OK') {
+                        formMessage.style.display = 'block';
+                        formMessage.style.backgroundColor = '#d4edda';
+                        formMessage.style.color = '#155724';
+                        formMessage.innerHTML = 'तुमचा संदेश यशस्वीरित्या पाठवला गेला आहे! आम्ही लवकरच तुमच्याशी संपर्क साधू.';
+                        document.getElementById('contactForm').reset();
+                    } else {
+                        formMessage.style.display = 'block';
+                        formMessage.style.backgroundColor = '#f8d7da';
+                        formMessage.style.color = '#721c24';
+                        formMessage.innerHTML = 'संदेश पाठवताना त्रुटी आली. कृपया पुन्हा प्रयत्न करा.';
+                    }
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                }
+            );
+        });
+    </script>
+</body>
+</html>
